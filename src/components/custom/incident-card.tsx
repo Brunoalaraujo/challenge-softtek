@@ -31,16 +31,16 @@ const badgeColorMap: Record<
 };
 
 const borderColorByStatus: Record<IncidentStatusType, string> = {
-  open: 'border-t-slate-400',
-  canceled: 'border-t-rose-500',
-  ['in-analysis']: 'border-t-amber-500',
-  resolved: 'border-t-emerald-500',
+  open: 'dark:border-t-slate-400 border-t-slate-500',
+  canceled: 'dark:border-t-rose-400 border-t-rose-500',
+  ['in-analysis']: 'dark:border-t-amber-400 border-t-amber-500',
+  resolved: 'dark:border-t-emerald-400 border-t-emerald-500',
 };
 
 export default function IncidentCard({ incident }: IncidentCardProps) {
   return (
     <Card
-      className={`border-4 ${borderColorByStatus[incident.status]}`}
+      className={`border-t-4 ${borderColorByStatus[incident.status]}`}
       key={incident.id}
     >
       <CardHeader>
