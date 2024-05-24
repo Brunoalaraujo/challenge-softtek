@@ -26,7 +26,7 @@ export default async function Incidents({
 
   return (
     <div className="flex flex-col gap-4 p-4 lg:p-8">
-      <h1 className="text-3xl font-bold tracking-tight">Pedidos</h1>
+      <h1 className="text-3xl font-bold tracking-tight">Chamados</h1>
       <div className="space-y-2.5">
         <IncidentTableFilters />
         <div className="rounded-md bincident">
